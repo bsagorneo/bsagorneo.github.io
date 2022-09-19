@@ -1,0 +1,112 @@
+.hero-area{
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    .content{
+        > span{
+            font-size: 1.125rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        h1{
+            font-size: 3.75rem;
+            color: $black;
+            font-weight: 700;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            span{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    width: calc(100% + 10px);
+                    height: 20px;
+                    background: rgba($primary-color,.4);
+                    left: -5px;
+                    bottom: 5%;
+                    z-index: -1;
+                }
+            }
+        }
+        p{
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: $black;
+            line-height: 2rem;
+            margin-bottom: 30px;
+        }
+    }
+    .image{
+        height: 100%;
+        position: relative;
+        img{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        img:nth-of-type(1){
+            max-width: 550px;
+            width: 100%;
+           
+            bottom: -100px;
+        }
+        img:nth-of-type(2){
+            bottom: 20%;
+            z-index: -1;
+            opacity: .5;
+            animation-name: heroShapeRotate;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+    }
+}
+@keyframes heroShapeRotate{
+    0%{
+        transform: translateX(-50%) rotate(0deg);
+    }
+    50%{
+        transform:translateX(-50%) rotate(20deg);
+    }
+    100%{
+        transform: translateX(-50%) rotate(0deg);
+    }
+}
+@media only screen and(max-width:992px){
+    .hero-area{
+        height: auto;
+        .image{
+            text-align: center;
+            img:not(:last-child){
+                position: static;
+                transform: none;
+            }
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .hero-area{
+        .image{
+            img{
+                max-width: 200px!important;
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and(min-width:1400px){
+    .hero-area{
+        height: calc(100vh - 80px);
+        .image{
+            img:nth-of-type(1){
+                bottom: -10px;
+                max-width: 650px;
+            }
+        }
+    }
+}
+@media only screen and(min-width:1800px){
+    .hero-area{
+        height: 900px;
+    }
+}

@@ -1,0 +1,81 @@
+.single-blog{
+    padding-top: 0;
+    .post{
+        border:none;
+        img{
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+        }
+        .post-body{
+            padding: 60px;
+            max-width: 950px;
+            margin: 0 auto;
+            background: darken(#fff,6%);
+            position: relative;
+            margin-top: -250px;
+            border-radius: 5px;
+            h1,h2,h3,h4,h5,h6{
+                font-family: 'Poppins', sans-serif;
+                color: $black;
+            }
+            h1{
+                font-size: 2.5rem;
+                line-height: 55px;
+                margin-bottom: 20px;
+            }
+            .listing-meta{
+                margin-bottom: 10px;
+                a{
+                    font-size: 1rem;
+                }
+            }
+            p{
+                font-size: 1.25rem;
+                line-height: 35px;
+                margin-bottom: 15px;
+            }
+            blockquote{
+                position: relative;
+                padding-left: 25px;
+                font-style: italic;
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    content: "";
+                    width: 10px;
+                    height: 100%;
+                    background: lighten($primary-color,40%);
+                }
+            }
+            ul,ol{
+                margin-left: 20px;
+                li{
+                    font-size: 1.25rem;
+                    line-height: 35px;
+                }
+            }
+            ul{
+                list-style: disc;
+            }
+        }
+    }
+}
+@media screen and(max-width:992px){
+    .single-blog{
+        .post{
+            img{
+                height: auto;
+            }
+            .post-body{
+                margin-top: 0;
+                padding: 20px;
+                h1{
+                    font-size: 1.5625rem;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+}

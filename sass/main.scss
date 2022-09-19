@@ -1,0 +1,29 @@
+/*Bootstrap*/
+@import"../vendor/bootstrap/scss/bootstrap.scss";
+
+//variables
+@import"../sass/variables.scss";
+
+/*global styles*/
+@import"../sass/global.scss";
+
+//Owl carousel
+@import'../vendor/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css';
+@import'../vendor/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css';
+
+//Fancybox
+@import'../vendor/fancybox-master/dist/jquery.fancybox.min.css';
+
+/*Components*/
+@import"../sass/navbar/navbar.scss";
+@import"../sass/hero-area/hero-area.scss";
+@import"../sass/about-me/about-me.scss";
+@import"../sass/skills/skills.scss";
+@import"../sass/services/services.scss";
+@import"../sass/specializing/specializing.scss";
+@import"../sass/portfolio/portfolio.scss";
+@import"../sass/testimonial/testimonial.scss";
+@import"../sass/blog/blog.scss";
+@import"../sass/contact/contact.scss";
+@import"../sass/footer/footer.scss";
+@import"../sass/single-blog/single-blog.scss";

@@ -1,0 +1,37 @@
+footer{
+    padding: 80px 0;
+    background:#101010;
+    .logo{
+        text-align: center;
+        display:block;
+        margin-bottom:20px;
+        img{
+            max-width: 80px;
+            width: 100%;
+        }
+    }
+    .social{
+        text-align: center;
+        margin-bottom:20px;
+        ul{
+            li{
+                display: inline-block;
+                a{
+                    vertical-align: middle;
+                    padding: 0 10px;
+                    svg{
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+    p.copyright{
+        text-align: center;
+        color:#fff;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 14px;
+        opacity: .8;
+    }
+}
